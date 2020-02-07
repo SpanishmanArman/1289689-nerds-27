@@ -5,10 +5,11 @@
     <title>Дизайн-студия Нёрдс</title>
   </head>
   <body>
-  	<header>
-  		<nav>
-  			<a>
-  			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип «Нёрдс»"></a>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
+  			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип «Нёрдс»">
+  			</a>
   			<ul class="site-navigation">
   					<li><a href="studio.html">Студия</a></li>
 					<li><a href="clients.html">Клиенты</a></li>
@@ -25,11 +26,11 @@
  	<img src="img/slide-picture.png" width="698" height="413" alt="Slider «Нёрдс»" tab="photo" style="position:absolute;left:150px;right:150px">
  </nav>
 
-<main>
+<main class="container">
 	<div>
 	<h1 class="visually-hidden">Долго, дорого, скрупулезно.»</h1>
 	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-	<button type="button">Узнать больше</button>
+	<button type="button">Узнать больше</button> 
 	</div>
 <section>
 	<h2 class="visually-hidden">Услуги</h2>
@@ -100,6 +101,17 @@
       <section class="form">
       	<a class="button" href="#">НАПИШИТЕ НАМ</a>
       </section>
+      <form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
+      	
+         
+      	<p class="contact-us-name"><label for="name"> Ваше имя:<input id="name"type="text" name="name" value="" placeholder="Имя Фамилия"></label></p>
+      	<p class="contact-us-mail"><label for="mail">Ваш e-mail:<input id="mail" type="mail" name="e-mail" value="" placeholder="email@example.com"></label></p>
+      	<p class="contact-us-text"><label for="text">Текст письма:<input id="text" type="text" name="text" value="" placeholder="В свободной форме"></label></p>
+      	<button class="button" type="submit">Отправить</button>
+
+
+
+      </form>
 <a href="map.html"><img src="img/2.png" width="1440" height="416"></a>
 <a href="map.html"><img src="img/map-marker.png" width="231" height="190"></a>
 			

@@ -7,7 +7,7 @@
   <body>
   	<header>
   		<nav>
-  			<a>
+  			<a href="index.html">
   			<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип «Нёрдс»"></a>
   			<ul class="site-navigation">
   				<li><a href="studio.html">Студия</a></li>
@@ -27,26 +27,91 @@
 
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
-			<li class="breadcrumbs-current"><a>Магазин</a></li>
+			<li class="breadcrumbs-current"><a href="catalog.html">Магазин</a></li>
 		</ul>
 <section class="filters">
 	<h2 class="visually-hidden">Фильтр товаров по стоимости</h2>
 	<!-- здесь будет форма -->
+		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend>Цена</legend>
+				<ul>
+				<li class="filter-option">Стоимость</li>
+		<div class="half-width">
+		<label for="rating">Стоимость</label>
+0<input type="range" name="rating" id=rating max="15000" min="0" step='100' value="1000">15000
+<p>От 0 до 15000</p>
+</div>
+</ul>
+</fieldset>
+
+
+<fieldset>
+	<legend>Сортировать</legend>
+	<ul>
+		<li class="filter-option"></li>
+			</ul>
+			</fieldset>
+
+
+<fieldset>
+	<legend>Сетка</legend>
+	<ul>
+		<li class="filter-option">
+              <input type="radio" name="Адаптивная" id="adapted" checked>
+                <label for="adapted">Адаптивная</label>
+        </li>
+        <li>
+              <input type="radio" name="Фиксированная" id="fixed">
+               <label for="fixed">Фиксированная</label>
+        </li>
+        <li>
+              <input type="radio" name="Резиновая" id="rubber" >
+              <label for="rubber">Резиновая</label>
+        </li>
+	</ul>
+			</fieldset>
+
+
+
+
+
+<fieldset>
+	<legend>Особенности</legend>
+	<ul>
+		<li>
+			<input type="checkbox" name="slider" id="slider" checked>
+			<label for="slider">Слайдер</label></li>
+		<li>
+			<input type="checkbox" name="block" id="block">
+			<label for="block">Блок преимуществ</label></li>
+		<li>
+			<input type="checkbox" name="news" id="news" checked>
+			<label for="news">Новости</label></li>
+
+	</ul>
+</fieldset>
+
+<button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+		</form>
+
+		
+
 </section>
 
 <section class="catalog">
 	<h2 class="visually-hidden">Магазин</h2>
 	<ul class="catalog-list">
 		<!-- Первый товар -->
-		<li class="catalog-item">
-			<h3>SEDONA</h3>
-			<p class="catalog-item-image">
-				<a href="catalog-item.html">SEDONA
-				<img src="img/img-sedona-jpg.png" width="360" height="576" alt="Информационный сайт для туристов"></a>
+		<li>
+			<a href="catalog-item.html">
+			<h3>
+				<span>SEDONA</span></h3>
+			<p>
+				<img src="img/img-sedona-jpg.png" width="360" height="576" alt="Информационный сайт для туристов">
 			</p>
-			<p class="catalog-item-price"><b>9900 РУБ.</b>
-			<a class="button" href="#"></a>
-			</p>
+		</a>
+			<a href="#">9900 РУБ.</a>
 		</li>
 
 		<!-- Второй товар -->
@@ -126,6 +191,17 @@
       <section class="form">
       	<a class="button" href="#">НАПИШИТЕ НАМ</a>
       </section>
+
+		<form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
+      	<p class="contact-us-name"><label for="name"> Ваше имя:<input id="name"type="text" name="name" value="" placeholder="Имя Фамилия"></label></p>
+      	<p class="contact-us-mail"><label for="mail">Ваш e-mail:<input id="mail" type="mail" name="e-mail" value="" placeholder="email@example.com"></label></p>
+      	<p class="contact-us-text"><label for="text">Текст письма:<input id="text" type="text" name="text" value="" placeholder="В свободной форме"></label></p>
+      	<button class="button" type="submit">Отправить</button>
+      	</form>
+
+
+
+
 <a href="map.html"><img src="img/2.png" width="1440" height="416"></a>
 <a href="map.html"><img src="img/map-marker.png" width="231" height="190"></a>
 			
@@ -133,11 +209,15 @@
 				<h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей</p>
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="img/vk-icon.svg">Вконтакте</a></li>
+          <li><a href="img/fb-icon.svg">Фейсбук</a></li>
+          <li><a href="img/insta-icon.svg">Инстаграм</a></li>
         </ul>
       </div>
+		
+
+
+
 	</footer>
 	</body>
 	</html>
